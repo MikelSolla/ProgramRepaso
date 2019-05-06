@@ -18,7 +18,9 @@ public class Actividad2 {
         finaliza=JOptionPane.showInputDialog("Como quieres que terminen los numeros?");
         
         for(int x = 0; x < ListaNumeros.length; x++)
-            JOptionPane.showMessageDialog(null,"hola cruck");
+            if(){
+                
+            }
             
     }
     
