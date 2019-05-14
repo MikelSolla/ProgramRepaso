@@ -50,7 +50,8 @@ public class Actividad7 {
                 lista.remove(eliminar);
                 break;
             case 5://Insertar numero en cualquier posicion
-                
+                int insNum =Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero que quieras insertar"));
+                int insPos =Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion en la que quieras insertar"));
                 break;
         
     }
