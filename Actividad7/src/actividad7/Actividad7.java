@@ -49,11 +49,16 @@ public class Actividad7 {
                 lista.remove(eliminar);
                 break;
             case 5://Insertar numero en cualquier posicion
+
                 int posicion2=Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion que quieres que esté"));
                 String nro=JOptionPane.showInputDialog("Introduce el numero que quieres meter");
                 lista.add(posicion2,nro);
                 for(int x = 0; x < lista.size(); x++)
             JOptionPane.showMessageDialog(null,"Posicion:"+ (x+1) +"Contenido: " + lista.get(x));
+
+                int insNum =Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero que quieras insertar"));
+                int insPos =Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion en la que quieras insertar"));
+
                 break;
         
     }
