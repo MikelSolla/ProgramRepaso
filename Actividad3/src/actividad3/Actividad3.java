@@ -40,7 +40,8 @@ public class Actividad3 {
             posiciones =Integer.parseInt( JOptionPane.showInputDialog("Elige una posicion"));
             confirmar =JOptionPane.showInputDialog("¿Quieres continuar?(Y/N)");
         }
-        while(confirmar != "N");
+        while(confirmar == "N");
+        JOptionPane.showMessageDialog(null, "Posicion: "+posiciones+" letra"+(abecedario[posiciones]-1));
             
     
     

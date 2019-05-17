@@ -14,11 +14,11 @@ public class Actividad2 {
         for(int x = 0; x < ListaNumeros.length; x++) 
         ListaNumeros[x] = (int) (Math.random()*300+1);
         //JOptionPane.showMessageDialog(null,"Posicion:"+ (x+1) +"Contenido: " + ListaNumeros[x]);
-        int[]NuevaLista;
+        
         finaliza=JOptionPane.showInputDialog("Como quieres que terminen los numeros?");
         
         for(int x = 0; x < ListaNumeros.length; x++)
-            if(){
+            if(ListaNumeros[x].charAt(ListaNumeros[x].length-1)){
                 
             }
             

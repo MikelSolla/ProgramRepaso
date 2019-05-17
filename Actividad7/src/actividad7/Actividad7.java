@@ -42,7 +42,6 @@ public class Actividad7 {
              break;
             case 3://Modificar numero
                 int posicion = Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion que quieres cambiar"));
-                lista.remove(posicion);
                 lista.set(posicion, JOptionPane.showInputDialog("NUmero que quieres introducir"));
                 break;
             case 4://Eliminar numero
@@ -50,7 +49,11 @@ public class Actividad7 {
                 lista.remove(eliminar);
                 break;
             case 5://Insertar numero en cualquier posicion
-                
+                int posicion2=Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion que quieres que esté"));
+                String nro=JOptionPane.showInputDialog("Introduce el numero que quieres meter");
+                lista.add(posicion2,nro);
+                for(int x = 0; x < lista.size(); x++)
+            JOptionPane.showMessageDialog(null,"Posicion:"+ (x+1) +"Contenido: " + lista.get(x));
                 break;
         
     }

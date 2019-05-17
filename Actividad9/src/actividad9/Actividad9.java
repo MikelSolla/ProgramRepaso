@@ -19,25 +19,16 @@ public class Actividad9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+    //Solo se hacerlo de esta forma    
         String digitos = JOptionPane.showInputDialog("Introduce los digitos de un DNI");
         Pattern dni = Pattern.compile("[0-9]{8}");
         Matcher encaja = dni.matcher(digitos);
-        if(encaja.matches())
-            JOptionPane.showMessageDialog(null, digitos);
-            
-        else
+        if(!encaja.matches())
             JOptionPane.showMessageDialog(null, "DNI no valido, vuelve a intentarlo");
-        
         
         int division = Integer.parseInt(digitos);
         
-        do{
         division = division%23;
-                }
-        while((division/23)>0);
-        JOptionPane.showMessageDialog(null,division);
-        int DNICompleto;
         switch(division){
             case 0:
                 JOptionPane.showMessageDialog(null,digitos+"-T");
