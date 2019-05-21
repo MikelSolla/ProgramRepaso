@@ -37,7 +37,7 @@ public class Actividad14 {
         }
         while(JOptionPane.showConfirmDialog(null,"¿ Quieres continuar?")==0);
         int menu;
-        
+        int y;
         do{
         menu =Integer.parseInt(JOptionPane.showInputDialog("Elige que quieres hacer:1Buscar/2Eliminar/3Ordenar/4Todos/5Salir"));
         switch(menu){
@@ -53,7 +53,7 @@ public class Actividad14 {
                 
             case 2:
                 String nombre =JOptionPane.showInputDialog("Introduce la persona que quieres borrar");
-                int y;
+                
                 for(y = 0; y < lista.size() && lista.get(y).getNombre().equals(nombre)== false; y++)
                 if( y == lista.size())
                     JOptionPane.showMessageDialog(null,nombre+" no encontrado/a");
