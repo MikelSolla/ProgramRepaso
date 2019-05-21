@@ -1,14 +1,14 @@
 package Clases;
 
 public class Persona {
-    int  DNI;
+    String  DNI;
     String nombre;
     String apellido;
-    int sexo;
-    int edad;
-    int peso;
+    String sexo;
+    String edad;
+    String peso;
 
-    public Persona(int DNI, String nombre, String apellido, int sexo, int edad, int peso) {
+    public Persona(String DNI, String nombre, String apellido, String sexo, String edad, String peso) {
         this.DNI = DNI;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -20,11 +20,11 @@ public class Persona {
     public Persona() {
     }
 
-    public int getDNI() {
+    public String getDNI() {
         return DNI;
     }
 
-    public void setDNI(int DNI) {
+    public void setDNI(String DNI) {
         this.DNI = DNI;
     }
 
@@ -44,27 +44,27 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public int getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(int sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
-    public int getEdad() {
+    public String getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(String edad) {
         this.edad = edad;
     }
 
-    public int getPeso() {
+    public String getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(String peso) {
         this.peso = peso;
     }
     
